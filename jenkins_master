@@ -12,7 +12,7 @@ pipeline {
         stage('Tigger the Slave Jobs') {
             steps {
                 script {
-                    def data = readFile(file: 'data.txt')
+                    def data = readFile(file: 'input.text')
                     def lines = data.readLines()
 
                      echo 'Start Trigger to send name and age to slave'
